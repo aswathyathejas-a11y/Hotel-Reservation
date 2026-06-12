@@ -1,0 +1,89 @@
+.hotels-container {
+  min-height: 100vh;
+  padding: 40px;
+  background:
+    linear-gradient(
+      rgba(0,0,0,0.4),
+      rgba(0,0,0,0.4)
+    ),
+    url("https://images.unsplash.com/photo-1566073771259-6a8506099945");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.hotels-title {
+  text-align: center;
+  color: white;
+  font-size: 3rem;
+  margin-bottom: 40px;
+  text-shadow: 2px 2px 10px black;
+}
+
+.hotel-grid {
+  display: grid;
+  grid-template-columns:
+    repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+}
+
+.hotel-card {
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(15px);
+  border-radius: 25px;
+  overflow: hidden;
+  transition: 0.4s;
+  box-shadow:
+    0 10px 25px rgba(0,0,0,0.3);
+}
+
+.hotel-card:hover {
+  transform: translateY(-10px);
+}
+
+.hotel-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.hotel-info {
+  padding: 20px;
+  color: white;
+}
+
+.hotel-info h2 {
+  margin-bottom: 10px;
+}
+
+.hotel-location {
+  color: #ffd700;
+  margin-bottom: 10px;
+}
+
+.hotel-description {
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.hotel-rating {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.hotel-btn {
+  width: 100%;
+  border: none;
+  padding: 12px;
+  border-radius: 12px;
+  background: #ff7b00;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hotel-btn:hover {
+  background: #ff5500;
+}
